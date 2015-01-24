@@ -6,6 +6,7 @@ var federalTransportTax = .025;
 function calculateAirfare(baseFare) {
     var fare = baseFare;
     fare += immigrationFee;
+    fare += customsFee; // fixed by bobby
     fare *= (1 + federalTransportTax);
     return fare;
 }
